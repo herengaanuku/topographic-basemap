@@ -1,4 +1,4 @@
-topographic-basemap
+#topographic-basemap
 Author: Herenga ā Nuku GIS Team
 Date: Sepetember 2024.
 
@@ -6,17 +6,17 @@ This repo contains example scripts used in this project by the Herenga ā Nuku A
 
 NOTE: Actual datasets, itemIDs, services and endpoints have been removed for privacy and security purposes. 
 
-Contents
+#Contents
 1. RunTask_MasterUpdateBasemapOffline.py
 2. Update_Datasets.py
 3. Update_VectorTileService.py
 4. Update_OfflineAreas.py
 5. WFS_Download.py
 
-Description: 
+#Description: 
 RunTask_MasterUpdateBasemapOffline.py runs scripts 2-4 in sequence in order to update local featureclasses from hosted sources via WFS and/or ArcGIS Python API, generate a new .vtpk file from your ArcGIS Pro project and overwrite an existing vector tile service with it (project and target itemID must be specified), then finally any offline areas and webmaps using the vector tile service can be automatically updated (webmaps must be specified). Part of the Update_Datasets.py WFS process utilises the WFS_Download.py script to call each dataset in the list. 
 
-How to use:
+#How to use:
 1. Downlaod to your local or virtual environment
 2. Place in folder near your update.gdb and data.gdb, ensure all scripts are in the same folder. 
 3. Install any packages listed that are not already present in your chosen python enviornment 
